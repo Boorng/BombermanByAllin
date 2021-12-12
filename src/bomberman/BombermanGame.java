@@ -6,7 +6,6 @@ import bomberman.entities.bomb.Flame;
 import bomberman.entities.mob.Bomber;
 import bomberman.entities.mob.Mob;
 import bomberman.entities.mob.enemy.Balloom;
-import bomberman.entities.mob.enemy.Kondoria;
 import bomberman.entities.mob.enemy.Minvo;
 import bomberman.entities.mob.enemy.Oneal;
 import bomberman.entities.powerup.*;
@@ -394,13 +393,6 @@ public class BombermanGame extends Application {
                     case '3': {
                         map[i][j] = ' ';
                         mobs.add(new Minvo(j * Sprite.SCALED_SIZE, i * Sprite.SCALED_SIZE, Sprite.minvo_right1.getFxImage()));
-                        e = new Grass(j * Sprite.SCALED_SIZE, i * Sprite.SCALED_SIZE, Sprite.grass.getFxImage());
-                        textures.add(e);
-                        break;
-                    }
-                    case '4': {
-                        map[i][j] = ' ';
-                        mobs.add(new Kondoria(j * Sprite.SCALED_SIZE, i * Sprite.SCALED_SIZE, Sprite.kondoria_right1.getFxImage()));
                         e = new Grass(j * Sprite.SCALED_SIZE, i * Sprite.SCALED_SIZE, Sprite.grass.getFxImage());
                         textures.add(e);
                         break;
